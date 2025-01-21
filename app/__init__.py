@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 # Инициализация SQLAlchemy с указанием типа
 db: SQLAlchemy = SQLAlchemy()
 
+
 def create_app(config_var: str = "default") -> Flask:
     """
     Фабрика для создания Flask-приложения.
