@@ -54,11 +54,7 @@ class ClientParking(db.Model):
 
     # Уникальность пары (client_id, parking_id)
     __table_args__ = (
-        UniqueConstraint(
-            "client_id",
-            "parking_id",
-            name="unique_client_parking"
-        ),
+        UniqueConstraint("client_id", "parking_id", name="unique_client_parking"),
     )
 
     # Связи
